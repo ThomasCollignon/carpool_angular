@@ -1,0 +1,12 @@
+*{
+    background-color: rgb(255, 255, 102);
+}
+table{
+    width: 100%;
+}
+#driversCell{
+    background-color: rgb(100, 255, 102);
+}
+#carsCell{
+    background-color: rgb(100, 25, 0);
+}

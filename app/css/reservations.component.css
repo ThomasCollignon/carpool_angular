@@ -1,0 +1,10 @@
+#reservationsComponent{
+    background-color: rgb(102, 255, 153);
+}
+th{
+    padding: 6px;
+}
+td{
+    padding: 3px;
+    font-size: smaller ;
+}
