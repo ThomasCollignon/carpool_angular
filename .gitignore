@@ -1,0 +1,5 @@
+node_modules/*
+*component.js
+*service.js
+*.js.map
+npm-debug.log
