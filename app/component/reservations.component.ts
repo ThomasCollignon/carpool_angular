@@ -31,7 +31,7 @@ export class ReservationsComponent implements OnInit {
         this.reservationsService.getReservations().subscribe(
             res => this.reservations = res,
             error => console.error('Error: ' + error),
-            () => console.log('Log Coli: Init data for reservations are retrieved: ' + this.reservations)
+            () => console.log('Log Coli: Init data for reservations are retrieved: ' + JSON.stringify(this.reservations, undefined, 2))
         );
     }
 

@@ -28,8 +28,8 @@ export class AddDriverComponent implements OnInit {
         this.driversService.getDrivers().subscribe(
             res => this.drivers = res,
             error => console.error('Error: ' + error),
-            () => console.log('Log Coli: Init data for drivers are retrieved: ' + this.drivers)
-        );
+            () => console.log('Log Coli: Init data for drivers are retrieved: ' + JSON.stringify(this.drivers, undefined, 2)
+            ));
     }
 
     addDriver(value: String) {
