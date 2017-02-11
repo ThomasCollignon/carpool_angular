@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
     // to use relative urls
     moduleId: module.id,
     templateUrl: '../html/drivers_and_cars.html',
-    styleUrls: ['../css/drivers_and_cars.css']
+    styleUrls: ['../css/drivers_and_cars.css'],
 })
 export class DriversAndCarsComponent { }

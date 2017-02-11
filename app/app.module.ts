@@ -8,6 +8,8 @@ import { ReservationsComponent } from './component/reservations.component';
 import { AddReservationComponent } from './component/add_reservation.component';
 // import { AddDriverComponent } from './component/add_driver.component';
 import { DriversAndCarsComponent } from './component/drivers_and_cars.component';
+import { AddDriverComponent } from './component/add_driver.component';
+import { CarsComponent } from './component/cars.component';
 
 // services
 import { ReservationsService } from './service/reservations.service';
@@ -25,8 +27,9 @@ import { UtilService } from './service/util.service';
         SampleComponent,
         ReservationsComponent,
         AddReservationComponent,
-        // AddDriverComponent,
-        DriversAndCarsComponent
+        AddDriverComponent,
+        DriversAndCarsComponent,
+        CarsComponent
     ],
     // services declared here are singletons for all the app
     providers: [
@@ -38,7 +41,6 @@ import { UtilService } from './service/util.service';
         SampleComponent,
         ReservationsComponent,
         AddReservationComponent,
-        // AddDriverComponent,
         DriversAndCarsComponent
     ]
 })
