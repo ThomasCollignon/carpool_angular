@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Driver } from '../model/driver.component';
-import { OnInit } from '@angular/core';
 import { DriversService } from '../service/drivers.service';
 
 @Component({
@@ -11,26 +10,13 @@ import { DriversService } from '../service/drivers.service';
     templateUrl: '../html/add_driver.component.html',
     styleUrls: ['../css/add_driver.component.css']
 })
-export class AddDriverComponent implements OnInit {
-    drivers: Driver[];
+
+export class AddDriverComponent {
     driverInput: Driver;
     output;
 
     constructor(
         private driversService: DriversService) { }
-
-    ngOnInit(): void {
-        // this.driversService.getDriversInit().subscribe(
-        //     res => this.drivers = res,
-        //     error => console.error('Error: ' + error),
-        //     () => console.log('Log Coli: Init data for drivers are retrieved: ' + this.drivers)
-        // );
-        this.driversService.getDrivers().subscribe(
-            res => this.drivers = res,
-            error => console.error('Error: ' + error),
-            () => console.log('Log Coli: Init data for drivers are retrieved: ' + JSON.stringify(this.drivers, undefined, 2)
-            ));
-    }
 
     addDriver(value: String) {
         this.driversService.addDriver(value).subscribe(
