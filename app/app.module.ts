@@ -15,6 +15,7 @@ import { DriversComponent } from './component/drivers.component';
 // services
 import { ReservationsService } from './service/reservations.service';
 import { DriversService } from './service/drivers.service';
+import { CarsService } from './service/cars.service';
 import { UtilService } from './service/util.service';
 
 // decorator
@@ -37,6 +38,7 @@ import { UtilService } from './service/util.service';
     providers: [
         ReservationsService,
         DriversService,
+        CarsService,
         UtilService
     ],
     bootstrap: [
