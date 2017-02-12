@@ -2,8 +2,4 @@
     <label>Add driver: </label>
     <input #driverInput placeholder="Driver name">
     <button (click)="addDriver(driverInput.value)">Save</button>
-    <br/>
-    <ul>
-        <li *ngFor="let driver of drivers">{{driver.driverName}}</li>
-    </ul>
 </div>
