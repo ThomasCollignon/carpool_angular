@@ -19,10 +19,15 @@ export class DriversComponent implements OnInit {
         private driversService: DriversService) { }
 
     ngOnInit(): void {
+        this.refreshDriverList();
+    }
+
+    refreshDriverList() {
         this.driversService.getDrivers().subscribe(
             res => this.drivers = res,
             error => console.error('Error: ' + error),
             () => console.log('Log Coli: Init data for drivers are retrieved: ' + JSON.stringify(this.drivers, undefined, 2)
             ));
     }
+
 }
